@@ -20,13 +20,23 @@ h3 {
 }
 
 .overview {
-  text-align: center;
+  /* text-align: center; */
   margin-left: 50px;
   margin-right: 50px;
 }
 
 .purpose {
-  text-align: center;
+  /* text-align: center; */
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.hypotheses {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.stat {
   margin-left: 50px;
   margin-right: 50px;
 }
