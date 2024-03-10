@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A/B Testing Portfolio</title>
+    <link rel="stylesheet" href="format.css" type="text/css" />
+  </head>
+  <body>
+    <!-- menu -->
+    <div class="menu">
+      <a href="#overview">Overview</a> &nbsp;
+      <a href="#purpose">Purpose</a> &nbsp;
+      <a href="#aboutWebPage">About the Web Page</a> &nbsp;
+      <a href="#hypotheses">Null and Alternative Hypotheses</a>
+    </div>
+
+    <!-- head -->
+    <hr />
+    <div class="title">
+      <h1>A/B Testing</h1>
+    </div>
+    <hr />
+
+    <!-- Overview -->
+    <div class="overview" id="overview">
+      <h3>Overview</h3>
+      <p>
+        A/B testing, also known as split testing, is a valuable technique used
+        by designers to compare two or more versions of a design element or user
+        experience to determine which version performs better at achieving a
+        specific goal. Designers can use this test to optimize user experience,
+        iterate design improvements, reduce development costs, etc.
+      </p>
+      <p>
+        A/B testing allows direct, side-by-side comparisons between two versions
+        of a design. This helps to understand which version will lead to better
+        results based on predefined metrics. In addition to this, A/B testing
+        helps validate hypotheses about user behavior and preferences. By
+        formulating hypotheses based on qualitative research or intuition and
+        testing them through A/B testing, I can gain insights into what really
+        drives user behavior. In this project, I conducted A/B testing on two
+        different user interfaces and used user data to analyze whether the
+        assumptions I had made were supported by enough evidence. These
+        assumptions are whether the new interface will affect the user's
+        misclick rate, time on page, and time to first click. Finally, some
+        analysis is done on the data to draw relevant conclusions about
+        statistics.
+      </p>
+    </div>
+    <br />
+    <div class="dotted-line"></div>
+
+    <!-- Purpose -->
+    <div class="purpose" id="purpose">
+      <h3>Purpose</h3>
+      <p>
+        The purpose of this project is to use A/B testing to compare two
+        different versions of a web page to determine which metrics will be
+        affected by different designs. As a result, I can use the conclusions I
+        draw to optimize the user experience, validate better design methods,
+        and make iterative improvements to the web page.
+      </p>
+    </div>
+    <br />
+    <div class="dotted-line"></div>
+
+    <!-- About the Web Page -->
+    <div class="aboutWebPage" id="aboutWebPage" style="text-align: center">
+      <h3>About the Web Page</h3>
+      <p>Image for the change I made to the interface in the studio:</p>
+      <img
+        src="img/image1.png"
+        alt="image1"
+        style="width: 500px; height: 300px"
+      />
+    </div>
+    <br />
+    <div class="dotted-line"></div>
+
+    <!-- Null and Alternative Hypotheses -->
+    <div class="hypotheses" id="hypotheses">
+      <h3>Null and Alternative Hypotheses</h3>
+      <ol>
+        <li>
+          <h4>Misclick rate</h4>
+          <ol type="i">
+            <li>
+              <p>Null hypothesis</p>
+              <p>Different UI designs have no impact on misclick rate.</p>
+            </li>
+            <li>
+              <p>Alternative hypothesis</p>
+              <p>
+                The design of the new interface will reduce the misclick rate.
+              </p>
+            </li>
+            <li>
+              <p>Prediction for null htpothesis</p>
+              <p>
+                I predict that this null hypothesis can eventually be rejected
+                because the new interface may make the target button more
+                eye-catching, which may have an impact on the misclick rate.
+              </p>
+            </li>
+            <li>
+              <p>Reasoning behind the alternative hypotheses</p>
+              <p>
+                The new interface differentiates elements that are similar on
+                the original interface to ensure that users can accurately click
+                the buttons they want, thus reducing the misclick rate.
+              </p>
+            </li>
+            <li>
+              <p>Describe which test you chose and why</p>
+              <p>
+                I choose kai squared test because there are two categories in
+                each version, which is not continuous, but categorical.
+              </p>
+            </li>
+            <li>
+              <p>
+                State whether the difference between versions A and B with
+                respect to the metric is statistically significant
+              </p>
+              <p>It is statistically significant.</p>
+            </li>
+            <li>
+              <p>
+                Include a description of any important values (i.e., t-score,
+                p-value, degrees of freedom, chi-squared statistic) calculated
+                from the test and what they tell us
+              </p>
+              <table border="1">
+                <tbody>
+                  <tr>
+                    <td>chi-squared</td>
+                    <td>1.35529</td>
+                  </tr>
+                  <tr>
+                    <td>p-valued</td>
+                    <td>0.24435</td>
+                  </tr>
+                  <tr>
+                    <td>df</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                The chi-squared value shows that there is statistically
+                significant difference between two versions of interface. The
+                p-value shows that there is only a 24% chance that the two
+                versions are the same. The df value represents the number of
+                categories in the data set that can vary freely, that is 1.
+              </p>
+            </li>
+            <li>
+              <p>
+                Conclude whether you reject or fail to reject your null
+                hypothesis
+              </p>
+              <p>
+                I success to reject the null hypothesis because the chi-squared
+                and p-value indicate that the misclick rate are different
+                between two interfaces. And the probability that the two
+                interfaces are the same is much smaller than the probability
+                that the two interfaces are different.
+              </p>
+            </li>
+            <li>
+              <p>Outputs</p>
+              <img
+                src="img/image2.png"
+                alt="image2"
+                style="width: 300px; height: 200px"
+              />
+            </li>
+          </ol>
+        </li>
+        <br />
+        <li>
+          <h4>Time on page</h4>
+          <ol type="i">
+            <li>
+              <p>Null hypothesis</p>
+              <p>Different UI designs have no impact on time on page.</p>
+            </li>
+            <li>
+              <p>Alternative hypothesis</p>
+              <p>
+                The design of the new interface will reduce the time on page.
+              </p>
+            </li>
+            <li>
+              <p>Prediction for null htpothesis</p>
+              <p>
+                I predict that this null hypothesis can eventually be rejected
+                because the new interface may provide some more guiding factors
+                on it, which may allow users to complete tasks faster.
+              </p>
+            </li>
+            <li>
+              <p>Reasoning behind the alternative hypotheses</p>
+              <p>
+                Because there are more guiding prompts on the new interface,
+                such as highlighting the name that the user is searching for,
+                this will shorten the time for users to find the name they want,
+                which means that it will shorten the time they stay on the
+                current page.
+              </p>
+            </li>
+            <li>
+              <p>Describe which test you chose and why</p>
+              <p>
+                I choose one-tailed t-test because the time on page is a number,
+                and it is numerical and continuous value.
+              </p>
+            </li>
+            <li>
+              <p>
+                State whether the difference between versions A and B with
+                respect to the metric is statistically significant
+              </p>
+              <p>It is not statistically significant.</p>
+            </li>
+            <li>
+              <p>
+                Include a description of any important values (i.e., t-score,
+                p-value, degrees of freedom, chi-squared statistic) calculated
+                from the test and what they tell us
+              </p>
+              <table border="1">
+                <tbody>
+                  <tr>
+                    <td>t-score</td>
+                    <td>1.28429</td>
+                  </tr>
+                  <tr>
+                    <td>p-valued</td>
+                    <td>0.89808</td>
+                  </tr>
+                  <tr>
+                    <td>df</td>
+                    <td>61.7798</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                The t-score shows that the time on page for two interfaces are
+                different. The p-value shows that there is about 90% chance that
+                the two versions are the same. The df value represents the
+                number of independent observations that can be used to estimate
+                the parameter, that is about 61.78.
+              </p>
+            </li>
+            <li>
+              <p>
+                Conclude whether you reject or fail to reject your null
+                hypothesis
+              </p>
+              <p>
+                I fail to reject the null hypothesis because the t-score and
+                p-value indicate that the time on page for different interfaces
+                are different, but they are more likely the same.
+              </p>
+            </li>
+            <li>
+              <p>Outputs</p>
+              <img
+                src="img/image3.png"
+                alt="image3"
+                style="width: 300px; height: 200px"
+              />
+            </li>
+          </ol>
+        </li>
+        <br />
+        <li>
+          <h4>
+            Time to first click (Different UI designs will lead to different
+            times for users to find the target button, so the time for the first
+            click will also be different.)
+          </h4>
+          <ol type="i">
+            <li>
+              <p>Null hypothesis</p>
+              <p>Different UI designs have no impact on time to first click.</p>
+            </li>
+            <li>
+              <p>Alternative hypothesis</p>
+              <p>
+                The design of the new interface will reduce the time to first
+                click.
+              </p>
+            </li>
+            <li>
+              <p>Prediction for null htpothesis</p>
+              <p>
+                I predict that this null hypothesis can eventually be rejected
+                because the operation of the new interface may be different from
+                the original one, which will affect the time of the user's first
+                click to a certain extent.
+              </p>
+            </li>
+            <li>
+              <p>Reasoning behind the alternative hypotheses</p>
+              <p>
+                Because the new interface has more guided prompts, users are
+                more likely to quickly find the corresponding button and
+                complete the task. In other words, the new interface will speed
+                up the reservation process, which means users will make the
+                first click more quickly.
+              </p>
+            </li>
+            <li>
+              <p>Describe which test you chose and why</p>
+              <p>
+                I choose one-tailed t-test because the time to first click is a
+                number, and it is numerical and continuous value.
+              </p>
+            </li>
+            <li>
+              <p>
+                State whether the difference between versions A and B with
+                respect to the metric is statistically significant
+              </p>
+              <p>It is not statistically significant.</p>
+            </li>
+            <li>
+              <p>
+                Include a description of any important values (i.e., t-score,
+                p-value, degrees of freedom, chi-squared statistic) calculated
+                from the test and what they tell us
+              </p>
+              <table border="1">
+                <tbody>
+                  <tr>
+                    <td>t-score</td>
+                    <td>2.31047</td>
+                  </tr>
+                  <tr>
+                    <td>p-valued</td>
+                    <td>0.98676</td>
+                  </tr>
+                  <tr>
+                    <td>df</td>
+                    <td>37.34858</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                The t-score shows that the time to first click for two
+                interfaces are different. The p-value shows that there is about
+                99% chance that the two versions are the same. The df value
+                represents the number of independent observations that can be
+                used to estimate the parameter, that is about 37.35.
+              </p>
+            </li>
+            <li>
+              <p>
+                Conclude whether you reject or fail to reject your null
+                hypothesis
+              </p>
+              <p>
+                I fail to reject the null hypothesis because the t-score and
+                p-value indicate that the time to first click for different
+                interfaces are different, but they are more likely the same
+                because a high p-value indicates that the difference is not
+                statistically significant.
+              </p>
+            </li>
+            <li>
+              <p>Outputs</p>
+              <img
+                src="img/image4.png"
+                alt="image4"
+                style="width: 300px; height: 200px"
+              />
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+    <br />
+    <hr />
+    <br />
+  </body>
+</html>
