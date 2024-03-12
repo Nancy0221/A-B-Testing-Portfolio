@@ -123,7 +123,7 @@
                 State whether the difference between versions A and B with
                 respect to the metric is statistically significant
               </p>
-              <p>It is statistically significant.</p>
+              <p>It is not statistically significant.</p>
             </li>
             <li>
               <p>
@@ -150,9 +150,9 @@
               <p>
                 The chi-squared value shows that there is statistically
                 significant difference between two versions of interface. The
-                p-value shows that there is only a 24% chance that the two
-                versions are the same. The df value represents the number of
-                categories in the data set that can vary freely, that is 1.
+                p-value shows that there is 24% chance that the two versions are
+                the same. The df value represents the number of categories in
+                the data set that can vary freely, that is 1.
               </p>
             </li>
             <li>
@@ -161,11 +161,13 @@
                 hypothesis
               </p>
               <p>
-                I success to reject the null hypothesis because the chi-squared
-                and p-value indicate that the misclick rate are different
-                between two interfaces. And the probability that the two
-                interfaces are the same is much smaller than the probability
-                that the two interfaces are different.
+                I fail to reject the null hypothesis based on the given data
+                because the p value is greater than 0.05. The chi-square
+                statistic (1.35529) by itself doesn't determine whether I can
+                reject the null hypothesis; it's the p-value that's used for
+                this purpose. The chi-square statistic is merely an indicator of
+                how well the observed data fit the expected distribution under
+                the null hypothesis.
               </p>
             </li>
             <li>
@@ -222,7 +224,7 @@
                 State whether the difference between versions A and B with
                 respect to the metric is statistically significant
               </p>
-              <p>It is not statistically significant.</p>
+              <p>It is statistically significant.</p>
             </li>
             <li>
               <p>
@@ -234,24 +236,24 @@
                 <tbody>
                   <tr>
                     <td>t-score</td>
-                    <td>1.28429</td>
+                    <td>-4.36169</td>
                   </tr>
                   <tr>
                     <td>p-valued</td>
-                    <td>0.89808</td>
+                    <td>0.00013728</td>
                   </tr>
                   <tr>
                     <td>df</td>
-                    <td>61.7798</td>
+                    <td>20.9638</td>
                   </tr>
                 </tbody>
               </table>
               <p>
                 The t-score shows that the time on page for two interfaces are
-                different. The p-value shows that there is about 90% chance that
-                the two versions are the same. The df value represents the
-                number of independent observations that can be used to estimate
-                the parameter, that is about 61.78.
+                different. The p-value shows that there is about 0.013728%
+                chance that the two versions are the same. The df value
+                represents the number of independent observations that can be
+                used to estimate the parameter, that is about 20.9638.
               </p>
             </li>
             <li>
@@ -260,15 +262,18 @@
                 hypothesis
               </p>
               <p>
-                I fail to reject the null hypothesis because the t-score and
+                I success to reject the null hypothesis because the t-score and
                 p-value indicate that the time on page for different interfaces
-                are different, but they are more likely the same.
+                are different, but they are unlikely the same. Overall, it's the
+                p-value that directly determines whether I reject the null
+                hypothesis. Since the p-value is less than the significance
+                level, I can reject the null hypothesis.
               </p>
             </li>
             <li>
               <p>Outputs</p>
               <img
-                src="img/image3.png"
+                src="img/image3-2.png"
                 alt="image3"
                 style="width: 300px; height: 200px"
               />
@@ -325,7 +330,7 @@
                 State whether the difference between versions A and B with
                 respect to the metric is statistically significant
               </p>
-              <p>It is not statistically significant.</p>
+              <p>It is statistically significant.</p>
             </li>
             <li>
               <p>
@@ -337,22 +342,22 @@
                 <tbody>
                   <tr>
                     <td>t-score</td>
-                    <td>2.31047</td>
+                    <td>-2.3105</td>
                   </tr>
                   <tr>
                     <td>p-valued</td>
-                    <td>0.98676</td>
+                    <td>0.013243</td>
                   </tr>
                   <tr>
                     <td>df</td>
-                    <td>37.34858</td>
+                    <td>37.3486</td>
                   </tr>
                 </tbody>
               </table>
               <p>
                 The t-score shows that the time to first click for two
                 interfaces are different. The p-value shows that there is about
-                99% chance that the two versions are the same. The df value
+                1.3243% chance that the two versions are the same. The df value
                 represents the number of independent observations that can be
                 used to estimate the parameter, that is about 37.35.
               </p>
@@ -363,17 +368,18 @@
                 hypothesis
               </p>
               <p>
-                I fail to reject the null hypothesis because the t-score and
-                p-value indicate that the time to first click for different
-                interfaces are different, but they are more likely the same
-                because a high p-value indicates that the difference is not
-                statistically significant.
+                I have sufficient evidence to reject the null hypothesis because
+                the t-score and p-value indicate that the time to first click
+                for different interfaces are different, and they are unlikely
+                the same. Overall, it's the p-value that directly determines
+                whether I reject the null hypothesis. Since the p-value is less
+                than the significance level, I can reject the null hypothesis.
               </p>
             </li>
             <li>
               <p>Outputs</p>
               <img
-                src="img/image4.png"
+                src="img/image4-2.png"
                 alt="image4"
                 style="width: 300px; height: 200px"
               />
@@ -392,32 +398,33 @@
         for version B.
       </p>
       <p>
-        For time on page, the average value of version A is 12860.44, and the
-        average value of version B is 9376.7. It can be seen that there is still
-        a gap between the two data. This may also be reflected in the t-score,
+        For time on page, the average value of version A is 3.077, and the
+        average value of version B is 7.9. It can be seen that there is still a
+        gap between the two data. This may also be reflected in the t-score,
         which also shows that the two data are not similar. In addition, the
-        variance of version A (140609949) is also larger than the variance of
-        version B (96675164.7), which shows that the data points of version B
-        are more concentrated, which may indicate that these data is more valid
-        and reliable.
+        variance of version A (9.4103) is also larger than the variance of
+        version B (4.9889), which shows that the data points of version B are
+        more concentrated, which may indicate that these data is more valid and
+        reliable.
       </p>
       <p>
-        For time to first click, the mean value of version A (5542.94) is larger
-        than the mean value of version B (3740). This shows that the speed of
-        most users clicks the button for the first time when using the interface
-        of version B is faster than that of version A. In this matric, the
-        variance of version A (19411963.57) is still larger than the variance of
-        version B (1139445.727), indicating that the data dispersion of version
-        B is smaller and can better represent a trend.
+        For time to first click, the mean value of version A (3740) is smaller
+        than the mean value of version B (5542.9411). This shows that the speed
+        of most users clicks the button for the first time when using the
+        interface of version A is faster than that of version B. In this matric,
+        the variance of version A (1139445.724) is still smaller than the
+        variance of version B (19411963.57), indicating that the data dispersion
+        of version A is smaller and can better represent a trend.
       </p>
       <p>
-        From my perspective, the more discrete data of version A may be due to
+        From my perspective, the more discrete data of version B may be due to
         reasons other than interface factors, such as different computer screens
         showing different clarity, or the user being nervous so that they
-        touched other buttons accidentally. Generally speaking, to obtain more
-        accurate statistical data, the number of data can be expanded, and we
-        should try to ensure that users conduct testing under stable and relax
-        external conditions. Just like a normal booking process.
+        touched other buttons accidentally or need more time to read from
+        screen. Generally speaking, to obtain more accurate statistical data,
+        the number of data can be expanded, and we should try to ensure that
+        users conduct testing under stable and relax external conditions. Just
+        like a normal booking process.
       </p>
     </div>
 
