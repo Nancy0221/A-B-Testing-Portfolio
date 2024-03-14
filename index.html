@@ -224,7 +224,7 @@
                 State whether the difference between versions A and B with
                 respect to the metric is statistically significant
               </p>
-              <p>It is statistically significant.</p>
+              <p>It is not statistically significant.</p>
             </li>
             <li>
               <p>
@@ -236,24 +236,24 @@
                 <tbody>
                   <tr>
                     <td>t-score</td>
-                    <td>-4.36169</td>
+                    <td>-1.28429</td>
                   </tr>
                   <tr>
                     <td>p-valued</td>
-                    <td>0.00013728</td>
+                    <td>0.10192</td>
                   </tr>
                   <tr>
                     <td>df</td>
-                    <td>20.9638</td>
+                    <td>61.7798</td>
                   </tr>
                 </tbody>
               </table>
               <p>
                 The t-score shows that the time on page for two interfaces are
-                different. The p-value shows that there is about 0.013728%
-                chance that the two versions are the same. The df value
-                represents the number of independent observations that can be
-                used to estimate the parameter, that is about 20.9638.
+                different. The p-value shows that there is about 10.192% chance
+                that the two versions are the same. The df value represents the
+                number of independent observations that can be used to estimate
+                the parameter, that is about 62.
               </p>
             </li>
             <li>
@@ -262,18 +262,18 @@
                 hypothesis
               </p>
               <p>
-                I success to reject the null hypothesis because the t-score and
+                I fail to reject the null hypothesis because the t-score and
                 p-value indicate that the time on page for different interfaces
-                are different, but they are unlikely the same. Overall, it's the
+                are different, and they are likely the same. Overall, it's the
                 p-value that directly determines whether I reject the null
-                hypothesis. Since the p-value is less than the significance
-                level, I can reject the null hypothesis.
+                hypothesis. Since the p-value is greater than the significance
+                level, I cannot reject the null hypothesis.
               </p>
             </li>
             <li>
               <p>Outputs</p>
               <img
-                src="img/image3-2.png"
+                src="img/image3-3.png"
                 alt="image3"
                 style="width: 300px; height: 200px"
               />
@@ -398,14 +398,14 @@
         for version B.
       </p>
       <p>
-        For time on page, the average value of version A is 3.077, and the
-        average value of version B is 7.9. It can be seen that there is still a
-        gap between the two data. This may also be reflected in the t-score,
-        which also shows that the two data are not similar. In addition, the
-        variance of version A (9.4103) is also larger than the variance of
-        version B (4.9889), which shows that the data points of version B are
-        more concentrated, which may indicate that these data is more valid and
-        reliable.
+        For time on page, the average value of version A is 9376.7, and the
+        average value of version B is 12860.4. It can be seen that there is
+        still a gap between the two data. This may also be reflected in the
+        t-score, which also shows that the two data are not similar. In
+        addition, the variance of version A (96675164.7) is also smaller than
+        the variance of version B (140609949), which shows that the data points
+        of version A are more concentrated, which may indicate that these data
+        is more valid and reliable.
       </p>
       <p>
         For time to first click, the mean value of version A (3740) is smaller
